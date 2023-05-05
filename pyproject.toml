@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "japan-address-normalizer"
+version = "0.1.0"
+description = "日本の住所を整形するライブラリ"
+authors = ["T3pp31,M1kan,KeiGoMiyamaE,Julian"]
+readme = "README.md"
+packages = [{include = "japan_address_normalizer"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.3.1"
+black = "^23.3.0"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
