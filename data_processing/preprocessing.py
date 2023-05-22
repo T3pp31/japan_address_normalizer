@@ -1,3 +1,5 @@
+import datetime as dt
+
 import pandas as pd
 
 data = pd.read_csv("./data_processing/data/KEN_ALL.CSV", encoding="shift-jis")
@@ -19,4 +21,15 @@ data.drop(
     inplace=True,
 )
 data["zip_code"] = data["zip_code"].apply(lambda x: str(x).zfill(7))
-data.to_csv("data/preprocessed.csv", index=False, encoding="shift-jis")
+
+now = dt.datetime.now()
+year = now.year
+month = now.month
+date = now.day
+
+
+data.to_csv(
+    f"data/preprocessed_{year}-{month}-{date}.csv",
+    index=False,
+    encoding="shift-jis",
+)
