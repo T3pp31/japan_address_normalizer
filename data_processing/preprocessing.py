@@ -1,3 +1,4 @@
+""" 郵政の住所郵便番号データを整理する"""
 import datetime as dt
 
 import pandas as pd
