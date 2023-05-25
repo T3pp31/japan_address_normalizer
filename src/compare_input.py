@@ -1,3 +1,8 @@
+"""
+このプログラムは入力データとデータベースの類似度スコアをつけるためのものです．
+This program is used to score the similarity
+between the input data and the database.
+"""
 import difflib
 
 
