@@ -4,7 +4,7 @@ compare_inputのテスト
 import sys
 
 sys.path.append("./src")
-from compare_input import *
+from compare_input import compare_input
 
 
 def test_compare_input():
