@@ -1,3 +1,6 @@
+"""
+compare_inputのテスト
+"""
 import sys
 
 sys.path.append("./src")
