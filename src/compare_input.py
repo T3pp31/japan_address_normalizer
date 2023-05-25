@@ -16,6 +16,7 @@ def compare_input(input_data, database_data):
     score : similarity score between input_data and database_data.
             input_dataとdatabase_dataの類似度スコア
     """
+
     score = difflib.SequenceMatcher(None, input_data, database_data).ratio()
 
     return score
