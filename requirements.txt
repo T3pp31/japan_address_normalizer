@@ -1,0 +1,6 @@
+pandas
+pytest
+black
+isort
+flake8
+sphinx
