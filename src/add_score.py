@@ -6,7 +6,7 @@ between the input data and the database.
 import difflib
 
 
-def compare_input(input_data, database_data):
+def add_score(input_data, database_data):
     """
     入力データとデータベース上の文字を比較する
     compare with input data and output data.

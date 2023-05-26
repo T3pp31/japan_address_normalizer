@@ -4,10 +4,10 @@ compare_inputのテスト
 import sys
 
 sys.path.append("./src")
-from compare_input import compare_input
+from add_score import compare_input
 
 
-def test_compare_input():
+def test_add_score():
 
 +    """
 +    This function tests the functionality of the compare_input function. It compares input_data
@@ -29,5 +29,5 @@ def test_compare_input():
     database_data = "東京都渋谷区恵比寿1-1-1"
     expected_score = 1.0
 
-    score = compare_input(input_data, database_data)
+    score = add_score(input_data, database_data)
     assert score == expected_score
