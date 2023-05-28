@@ -22,7 +22,7 @@ data.drop(
     inplace=True,
 )
 data["zip_code"] = data["zip_code"].apply(lambda x: str(x).zfill(7))
-
+data["市区町村字"] = data["市区町村"] + data["字"]
 now = dt.datetime.now()
 year = now.year
 month = now.month
