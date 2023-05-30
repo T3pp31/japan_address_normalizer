@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python3:
+    restart: always
+    build: .
+    container_name: 'japanese_address_normalization'
+    working_dir: '/root/src'
+    tty: true
+    volumes:
+      - ./:/root/src
