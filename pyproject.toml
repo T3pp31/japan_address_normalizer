@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "日本の住所を整形するライブラリ"
 authors = ["T3pp31,M1kan,KeiGoMiyamaE,Julian"]
 readme = "README.md"
-packages = [{include = "japan_address_normalizer"}]
+packages = [{include = "japan_address_normalizer"},{include = "test_return_zipcode", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
